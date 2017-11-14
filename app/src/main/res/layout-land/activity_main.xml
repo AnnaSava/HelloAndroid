@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gradient">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="30sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="Udacity"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/net"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/net" />
+
+            <ImageView
+                android:id="@+id/keyboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/keyboard" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#91daee"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:text="Online Programming Courses"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#02ccba"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/slogan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="2dp"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:text="Build Your Future"/>
+
+                <TextView
+                    android:id="@+id/slogan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="2dp"
+                    android:gravity="top|center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:text="Learn to Code"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/programming"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/programing" />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/digits"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/digits" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:background="#02b3e4"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textStyle="italic"
+                    android:text="2465 Latham St" />
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_below="@id/street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textStyle="italic"
+                    android:text="Mountain View, CA 94043" />
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_below="@id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textStyle="italic"
+                    android:text="Tel. 650-555-5555" />
+
+                <TextView
+                    android:id="@+id/url"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#096bcc"
+                    android:textColor="#91daee"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:layout_margin="6dp"
+                    android:textSize="14sp"
+                    android:text="www.udacity.com" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
