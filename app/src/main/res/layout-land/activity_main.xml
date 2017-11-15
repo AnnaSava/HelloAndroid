@@ -32,7 +32,7 @@
             android:textColor="@android:color/white"
             android:gravity="center_vertical"
             android:padding="8dp"
-            android:text="Udacity"/>
+            android:text="@string/udacity"/>
 
     </LinearLayout>
 
@@ -65,7 +65,7 @@
                 android:gravity="center"
                 android:textSize="24sp"
                 android:padding="4dp"
-                android:text="Build Your Future"/>
+                android:text="@string/slogan1"/>
 
             <ImageView
                 android:id="@+id/net"
@@ -108,7 +108,7 @@
                 android:gravity="center"
                 android:background="#02ccba"
                 android:textColor="@android:color/white"
-                android:text="Learn to Code"/>
+                android:text="@string/slogan2"/>
         </LinearLayout>
 
         <LinearLayout
@@ -139,7 +139,7 @@
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="italic"
-                        android:text="2465 Latham St" />
+                        android:text="@string/addr1" />
 
                     <TextView
                         android:id="@+id/state"
@@ -150,7 +150,7 @@
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="italic"
-                        android:text="Mountain View, CA 94043" />
+                        android:text="@string/addr2" />
 
                     <TextView
                         android:id="@+id/tel"
@@ -162,7 +162,7 @@
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="italic"
-                        android:text="Tel. 650-555-5555" />
+                        android:text="@string/tel" />
                 </LinearLayout>
 
                 <TextView
@@ -175,7 +175,7 @@
                     android:gravity="center"
                     android:padding="12dp"
                     android:textSize="14sp"
-                    android:text="www.udacity.com" />
+                    android:text="@string/website" />
             </LinearLayout>
 
             <ImageView
