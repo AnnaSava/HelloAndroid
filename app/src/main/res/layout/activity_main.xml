@@ -6,9 +6,10 @@
     android:orientation="vertical"
     tools:context="com.example.android.helloandroid.MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout 
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:orientation="horizontal"
         android:background="@drawable/gradient">
 
@@ -38,33 +39,33 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/net"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:scaleType="centerCrop"
             android:src="@drawable/net" />
 
         <TextView
-            android:id="@+id/info"
+            android:id="@+id/slogan1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:background="#91daee"
             android:gravity="center"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:padding="4dp"
-            android:text="Online Programming Courses"/>
+            android:text="Build Your Future"/>
 
         <ImageView
             android:id="@+id/keyboard"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:scaleType="centerCrop"
             android:src="@drawable/keyboard" />
 
@@ -73,44 +74,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:background="#02ccba"
         android:orientation="horizontal">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/slogan2"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:padding="4dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Learn to Code"/>
 
-            <TextView
-                android:id="@+id/slogan1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:textSize="18sp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingTop="4dp"
-                android:paddingBottom="2dp"
-                android:gravity="bottom|center_horizontal"
-                android:textColor="@android:color/white"
-                android:text="Build Your Future"/>
-
-            <TextView
-                android:id="@+id/slogan2"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:textSize="18sp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="4dp"
-                android:paddingTop="2dp"
-                android:gravity="top|center_horizontal"
-                android:textColor="@android:color/white"
-                android:text="Learn to Code"/>
-        </LinearLayout>
 
         <ImageView
             android:id="@+id/programming"
@@ -133,73 +111,76 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/digits"
             android:layout_width="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             android:src="@drawable/digits" />
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="5"
+            android:layout_weight="2"
             android:layout_height="match_parent"
             android:background="#02b3e4"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/street"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:textStyle="italic"
-                android:text="2465 Latham St" />
 
-            <TextView
-                android:id="@+id/state"
-                android:layout_below="@id/street"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:textStyle="italic"
-                android:text="Mountain View, CA 94043" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textStyle="italic"
+                    android:text="2465 Latham St" />
 
-            <TextView
-                android:id="@+id/tel"
-                android:layout_below="@id/state"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"
-                android:paddingTop="4dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:textStyle="italic"
-                android:text="Tel. 650-555-5555" />
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textStyle="italic"
+                    android:text="Mountain View, CA 94043" />
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textStyle="italic"
+                    android:text="Tel. 650-555-5555" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/url"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:background="#096bcc"
                 android:textColor="#91daee"
                 android:gravity="center"
-                android:padding="4dp"
-                android:layout_margin="6dp"
+                android:padding="12dp"
                 android:textSize="14sp"
                 android:text="www.udacity.com" />
-        </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
